@@ -1,36 +1,54 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:value_ville/demo.dart';
 
+import 'main.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(DashboardPage(uname: ""));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "Dashboard",
-      home: DashboardPage(),
-    );
-  }
-}
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(
+//       title: "Dashboard",
+//       home: DashboardPage(uname: "",),
+//     );
+//   }
+// }
 
 class DashboardPage extends StatefulWidget {
-  const DashboardPage({super.key});
+  final String uname;
+  const DashboardPage({Key? key, required this.uname});
 
   @override
   State<DashboardPage> createState() => _DashboardPageState();
 }
 
 class _DashboardPageState extends State<DashboardPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.orange.shade100,
       appBar: AppBar(
-        title: Text("Value-Ville"),
+        leading: null,
+        title: Row(
+          children: [
+            Text("Value-Ville"),
+            Spacer(),
+            IconButton(onPressed: () async{
+              await FirebaseAuth.instance.signOut();
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => LoginPage()));
+            }
+            , icon: Icon(Icons.logout))
+          ],
+        ),
+
       ),
       body: SingleChildScrollView(
         // padding: EdgeInsets.only(left: 30,right: 30),
@@ -57,7 +75,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           Container(
                             margin: EdgeInsets.only(top: 50, left: 200),
                             child: Text(
-                              "Welcome Username",
+                              "Welcome "+widget.uname+" !",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
