@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCu0g7npFdNIkyvnQqtcQD2mpiqe_iKWqk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>342571500267</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.valueVille.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>value-ville-3b54b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>value-ville-3b54b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:342571500267:ios:ff7914968a51168243b4ae</string>
+	<key>DATABASE_URL</key>
+	<string>https://value-ville-3b54b-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

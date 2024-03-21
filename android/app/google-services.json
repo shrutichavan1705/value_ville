@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "342571500267",
+    "firebase_url": "https://value-ville-3b54b-default-rtdb.firebaseio.com",
+    "project_id": "value-ville-3b54b",
+    "storage_bucket": "value-ville-3b54b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342571500267:android:0bda1bfea0280ed143b4ae",
+        "android_client_info": {
+          "package_name": "com.example.value_ville"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4_idrpFkGvy3Zye28xDbT37THxbAsmwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
